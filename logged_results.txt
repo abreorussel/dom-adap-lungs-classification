@@ -1,0 +1,675 @@
+########################################################################################################
+TBX :  5-95 
+########################################################################################################
+
+---------
+In-Domain
+----------
+
+Total dataset size: 8400
+Training set size: 420
+Test set size: 7980
+Number of normal images in training set: 380
+Number of TB images in training set: 40
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.96      0.98      0.97      7220
+         1.0       0.79      0.65      0.71       760
+
+    accuracy                           0.95      7980
+   macro avg       0.88      0.81      0.84      7980
+weighted avg       0.95      0.95      0.95      7980
+
+Confusion Matrix:
+[[7088  132]
+ [ 269  491]]
+
+
+-------------
+Out-of-Domain
+-------------
+
+KAGGLE
+_______
+
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.90      0.89      0.89      3500
+         1.0       0.47      0.48      0.48       700
+
+    accuracy                           0.82      4200
+   macro avg       0.68      0.69      0.69      4200
+weighted avg       0.83      0.82      0.82      4200
+
+Confusion Matrix:
+[[3123  377]
+ [ 362  338]]
+
+MENDELEY
+_________
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.18      0.98      0.30       514
+         1.0       0.92      0.05      0.09      2494
+
+    accuracy                           0.21      3008
+   macro avg       0.55      0.51      0.19      3008
+weighted avg       0.79      0.21      0.13      3008
+
+Confusion Matrix:
+[[ 504   10]
+ [2375  119]]
+
+
+
+########################################################################################################
+KAGGLE :  5-95 
+########################################################################################################
+
+
+----------
+In-Domain
+----------
+Total dataset size: 4200
+Training set size: 210
+Test set size: 3990
+Number of normal images in training set: 175
+Number of TB images in training set: 35
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.93      0.99      0.96      3325
+         1.0       0.95      0.60      0.73       665
+
+    accuracy                           0.93      3990
+   macro avg       0.94      0.80      0.85      3990
+weighted avg       0.93      0.93      0.92      3990
+
+Confusion Matrix:
+[[3304   21]
+ [ 267  398]]
+
+-------------
+Out-of-Domain
+-------------
+
+TBX11K
+_______
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.90      1.00      0.95      7600
+         1.0       0.07      0.00      0.00       800
+
+    accuracy                           0.90      8400
+   macro avg       0.49      0.50      0.48      8400
+weighted avg       0.83      0.90      0.86      8400
+
+Confusion Matrix:
+[[7573   27]
+ [ 798    2]]
+
+
+MENDELEY
+________
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.26      0.99      0.41       514
+         1.0       0.99      0.41      0.58      2494
+
+    accuracy                           0.51      3008
+   macro avg       0.63      0.70      0.50      3008
+weighted avg       0.87      0.51      0.55      3008
+
+Confusion Matrix:
+[[ 508    6]
+ [1465 1029]]
+
+
+
+########################################################################################################
+MENDELEY :  5-95 
+########################################################################################################
+
+Total dataset size: 3008
+Training set size: 150
+Test set size: 2858
+Number of normal images in training set: 26
+Number of TB images in training set: 124
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.98      0.99      0.99       488
+         1.0       1.00      1.00      1.00      2370
+
+    accuracy                           1.00      2858
+   macro avg       0.99      0.99      0.99      2858
+weighted avg       1.00      1.00      1.00      2858
+
+Confusion Matrix:
+[[ 482    6]
+ [   8 2362]]
+
+
+KAGGLE
+_______
+
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.95      0.19      0.32      3500
+         1.0       0.19      0.95      0.32       700
+
+    accuracy                           0.32      4200
+   macro avg       0.57      0.57      0.32      4200
+weighted avg       0.82      0.32      0.32      4200
+
+Confusion Matrix:
+[[ 669 2831]
+ [  38  662]]
+
+
+TBX11K
+________
+
+
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.94      0.01      0.02      7600
+         1.0       0.10      0.99      0.17       800
+
+    accuracy                           0.11      8400
+   macro avg       0.52      0.50      0.10      8400
+weighted avg       0.86      0.11      0.04      8400
+
+Confusion Matrix:
+[[  93 7507]
+ [   6  794]]
+
+
+########################################################################################################
+Finetuning pretrained TBX11K  :  80-20 
+########################################################################################################
+
+---------------
+Kaggle - 20%
+---------------
+Total training samples: 840
+Normal samples in training set: 700
+TB samples in training set: 140
+Total batches in training loader: 140
+
+Accuracy: 0.9630
+Precision: 0.8771
+Recall: 0.9053
+F1-Score: 0.8910
+
+
+---------------
+Kaggle - 10%
+---------------
+Total training samples: 420
+Normal samples in training set: 350
+TB samples in training set: 70
+Total batches in training loader: 140
+
+Accuracy: 0.9253
+Precision: 0.8117
+Recall: 0.7230
+F1-Score: 0.7630
+
+---------------
+Kaggle - 5%
+---------------
+Total training samples: 210
+Normal samples in training set: 175
+TB samples in training set: 35
+Total batches in training loader: 70
+
+Accuracy: 0.9017
+Precision: 0.7480
+Recall: 0.6206
+F1-Score: 0.6778
+
+
+---------------
+Kaggle - 2%
+---------------
+
+Total training samples: 84
+Normal samples in training set: 70
+TB samples in training set: 14
+Total batches in training loader: 28
+
+Accuracy: 0.8618
+Precision: 0.6061
+Recall: 0.5171
+F1-Score: 0.5529
+
+---------------
+Kaggle - 1%
+---------------
+
+Total training samples: 42
+Normal samples in training set: 35
+TB samples in training set: 7
+Total batches in training loader: 14
+
+Accuracy: 0.8270
+Precision: 0.4945
+Recall: 0.4716
+F1-Score: 0.4742
+
+================================================================================
+
+
+---------------
+Mendeley - 20%
+---------------
+
+Total training samples: 601
+Normal samples in training set: 103
+TB samples in training set: 498
+Total batches in training loader: 100
+
+Accuracy: 0.9937
+Precision: 0.9969
+Recall: 0.9954
+F1-Score: 0.9962
+
+
+---------------
+Mendeley - 10%
+---------------
+
+Total training samples: 300
+Normal samples in training set: 51
+TB samples in training set: 249
+Total batches in training loader: 100
+
+Accuracy: 0.9857
+Precision: 0.9893
+Recall: 0.9936
+F1-Score: 0.9914
+
+
+---------------
+Mendeley - 5%
+---------------
+
+Total training samples: 150
+Normal samples in training set: 26
+TB samples in training set: 124
+Total batches in training loader: 50
+
+Accuracy: 0.9666
+Precision: 0.9742
+Recall: 0.9860
+F1-Score: 0.9800
+
+---------------
+Mendeley - 2%
+---------------
+
+Total training samples: 60
+Normal samples in training set: 10
+TB samples in training set: 50
+Total batches in training loader: 20
+
+Accuracy: 0.8818
+Precision: 0.9218
+Recall: 0.9376
+F1-Score: 0.9292
+
+---------------
+Mendeley - 1%
+---------------
+
+Total training samples: 30
+Normal samples in training set: 5
+TB samples in training set: 25
+Total batches in training loader: 10
+
+Accuracy: 0.7856
+Precision: 0.8936
+Recall: 0.8416
+F1-Score: 0.8655
+
+
+
+
+########################################################################################################
+Finetuning pretrained MENDELEY  :  80-20 
+########################################################################################################
+
+
+---------------
+Kaggle - 20%
+---------------
+Total training samples: 840
+Normal samples in training set: 700
+TB samples in training set: 140
+Total batches in training loader: 140
+
+Accuracy: 0.9642
+Precision: 0.8832
+Recall: 0.9053
+F1-Score: 0.8941
+
+
+
+---------------
+Kaggle - 10%
+---------------
+Total training samples: 420
+Normal samples in training set: 350
+TB samples in training set: 70
+Total batches in training loader: 140
+
+Accuracy: 0.9430
+Precision: 0.8488
+Recall: 0.8065
+F1-Score: 0.8245
+
+
+
+---------------
+Kaggle - 5%
+---------------
+Total training samples: 210
+Normal samples in training set: 175
+TB samples in training set: 35
+Total batches in training loader: 70
+
+Accuracy: 0.9184
+Precision: 0.7749
+Recall: 0.7344
+F1-Score: 0.7500
+
+---------------
+Kaggle - 2%
+---------------
+
+Total training samples: 84
+Normal samples in training set: 70
+TB samples in training set: 14
+Total batches in training loader: 28
+
+Accuracy: 0.8845
+Precision: 0.6782
+Recall: 0.6124
+F1-Score: 0.6378
+
+
+---------------
+Kaggle - 1%
+---------------
+
+Total training samples: 42
+Normal samples in training set: 35
+TB samples in training set: 7
+Total batches in training loader: 14
+
+Accuracy: 0.8536
+Precision: 0.5869
+Recall: 0.5240
+F1-Score: 0.5405
+
+
+================================================================================
+
+
+---------------
+TBX11K - 20%
+---------------
+
+
+Total training samples: 1680
+Normal samples in training set: 1520
+TB samples in training set: 160
+Total batches in training loader: 304
+
+Accuracy: 0.9364
+Precision: 0.6287
+Recall: 0.8125
+F1-Score: 0.7089
+
+
+---------------
+TBX11K - 10%
+---------------
+
+
+Total training samples: 840
+Normal samples in training set: 760
+TB samples in training set: 80
+Total batches in training loader: 304
+
+Accuracy: 0.8158
+Precision: 0.4222
+Recall: 0.7015
+F1-Score: 0.4946
+
+
+
+---------------
+TBX11K - 5%
+---------------
+
+Total training samples: 420
+Normal samples in training set: 380
+TB samples in training set: 40
+Total batches in training loader: 152
+
+Accuracy: 0.7609
+Precision: 0.2810
+Recall: 0.6249
+F1-Score: 0.3621
+
+---------------
+TBX11K - 2%
+---------------
+
+
+Total training samples: 168
+Normal samples in training set: 152
+TB samples in training set: 16
+Total batches in training loader: 61
+
+Accuracy: 0.8346
+Precision: 0.2737
+Recall: 0.3364
+F1-Score: 0.2768
+
+---------------
+TBX11K - 1%
+---------------
+
+
+Total training samples: 84
+Normal samples in training set: 76
+TB samples in training set: 8
+Total batches in training loader: 31
+
+Accuracy: 0.8424
+Precision: 0.2647
+Recall: 0.2737
+F1-Score: 0.2530
+
+
+
+########################################################################################################
+Finetuning pretrained KAGGLE  :  80-20 
+########################################################################################################
+
+
+---------------
+Mendeley - 20%
+---------------
+
+Total training samples: 601
+Normal samples in training set: 103
+TB samples in training set: 498
+Total batches in training loader: 100
+
+
+Accuracy: 0.9954
+Precision: 1.0
+Recall: 0.9944
+F1-Score: 0.9972
+
+
+---------------
+Mendeley - 10%
+---------------
+
+Total training samples: 300
+Normal samples in training set: 51
+TB samples in training set: 249
+Total batches in training loader: 100
+
+
+Accuracy: 0.9956
+Precision: 0.9998
+Recall: 0.9949
+F1-Score: 0.9973
+
+---------------
+Mendeley - 5%
+---------------
+
+Total training samples: 150
+Normal samples in training set: 26
+TB samples in training set: 124
+Total batches in training loader: 50
+
+
+Accuracy: 0.9918
+Precision: 0.9972
+Recall: 0.9929
+F1-Score: 0.9950
+
+
+---------------
+Mendeley - 2%
+---------------
+
+Total training samples: 60
+Normal samples in training set: 10
+TB samples in training set: 50
+Total batches in training loader: 20
+
+Accuracy: 0.9785
+Precision: 0.9910
+Recall: 0.9831
+F1-Score: 0.9870
+
+---------------
+Mendeley - 1%
+---------------
+
+Total training samples: 30
+Normal samples in training set: 5
+TB samples in training set: 25
+Total batches in training loader: 10
+
+Accuracy: 0.9676
+Precision: 0.9867
+Recall: 0.9742
+F1-Score: 0.9803
+
+
+================================================================================
+
+
+---------------
+TBX11K - 20%
+---------------
+
+
+Total training samples: 1680
+Normal samples in training set: 1520
+TB samples in training set: 160
+Total batches in training loader: 304
+
+Accuracy: 0.9644
+Precision: 0.8147
+Recall: 0.8109
+F1-Score: 0.8128
+
+
+---------------
+TBX11K - 10%
+---------------
+
+
+Total training samples: 840
+Normal samples in training set: 760
+TB samples in training set: 80
+Total batches in training loader: 304
+
+Accuracy: 0.9522
+Precision: 0.7723
+Recall: 0.7356
+F1-Score: 0.7474
+
+
+---------------
+TBX11K - 5%
+---------------
+
+Total training samples: 420
+Normal samples in training set: 380
+TB samples in training set: 40
+Total batches in training loader: 152
+
+
+Accuracy: 0.9458
+Precision: 0.7602
+Recall: 0.6462
+F1-Score: 0.6941
+
+---------------
+TBX11K - 2%
+---------------
+
+
+Total training samples: 168
+Normal samples in training set: 152
+TB samples in training set: 16
+Total batches in training loader: 61
+
+
+Accuracy: 0.9182
+Precision: 0.6237
+Recall: 0.3585
+F1-Score: 0.4526
+
+---------------
+TBX11K - 1%
+---------------
+
+
+Total training samples: 84
+Normal samples in training set: 76
+TB samples in training set: 8
+Total batches in training loader: 31
+
+
+Accuracy: 0.8959
+Precision: 0.4705
+Recall: 0.2506
+F1-Score: 0.3197
