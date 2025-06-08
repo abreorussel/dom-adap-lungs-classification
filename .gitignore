@@ -1,0 +1,16 @@
+*.pth
+/result
+/output_images_chexpert
+/output_images_indian
+/output_images_NIH_tb
+/reconstructed_images_chexpert
+/reconstructed_images_indian
+/reconstructed_images_kaggle
+/reconstructed_images_NIH
+/autoencoder_images_chexpert
+/autoencoder_images_NIH
+/autoencoder_images_indian
+*.pyc
+/myenv
+*.png
+*.csv
